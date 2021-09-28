@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.shop_demo.dao.IProductDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.demo.shop_demo.entity.Product">
+        <id column="pid" property="pid" />
+        <result column="pname" property="pname" />
+        <result column="market_price" property="marketPrice" />
+        <result column="shop_price" property="shopPrice" />
+        <result column="image" property="image" />
+        <result column="pdesc" property="pdesc" />
+        <result column="is_hot" property="isHot" />
+        <result column="pdate" property="pdate" />
+        <result column="num" property="num" />
+        <result column="cid" property="cid" />
+        <result column="csid" property="csid" />
+        <result column="hid" property="hid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        pid, pname, market_price, shop_price, image, pdesc, is_hot, pdate, num, cid, csid, hid
+    </sql>
+
+</mapper>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="./js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="./js/layui/layui.js"></script>
+    <script src="./js/page/public.js"></script>
+    <script src="./js/page/user_register.js"></script>
+</head>
+<body>
+<div>
+    <form action="javascript:void(0)" id="registerForm">
+        <ul>
+            <li>
+                <input type="text" name="username" id="username" value="" placeholder="用户名" onblur="checkRegisterUsername()"/>
+            </li>
+            <li>
+                <input type="password" name="password" id="password" value="" placeholder="密码"/>
+            </li>
+            <li>
+                <input type="password" name="" id="checkPassword" value="" placeholder="请再次输入密码" onblur="checkRegisterPassword()"/>
+            </li>
+            <li>
+                <input type="text" name="name" id="name" value="" placeholder="姓名" onblur="checkName()"/>
+            </li>
+            <li>
+                <input type="email" name="email" id="email" value="" placeholder="请输入邮箱"/>
+            </li>
+            <li>
+                <input type="text" name="phone" id="telephone" value="" placeholder="请输入手机号" onblur="checkTelephone()"/>
+            </li>
+        </ul>
+        <button type="submit" onclick="userRegister()">立即注册</button>
+    </form>
+</div>
+</body>
+</html>

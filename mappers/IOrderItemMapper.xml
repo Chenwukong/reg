@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.shop_demo.dao.IOrderItemDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.demo.shop_demo.entity.OrderItem">
+        <id column="itemId" property="itemId" />
+        <result column="count" property="count" />
+        <result column="subtotal" property="subtotal" />
+        <result column="pid" property="pid" />
+        <result column="oid" property="oid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        itemId, count, subtotal, pid, oid
+    </sql>
+
+</mapper>
